@@ -63,4 +63,8 @@ $grid = array_map('str_split', explode(PHP_EOL, trim($input)));
 // var_dump($grid);
 // die();
 
-echo "Aantal X-MAS patronen: " . countXMAS($grid);
+$totalCount = countXMAS($grid);
+
+echo "Aantal keren X-MAS: " . $totalCount . "\n";
+
+echo "<script>console.log('Aantal keren X-MAS: " . $totalCount . "');</script>";
