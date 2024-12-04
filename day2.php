@@ -29,7 +29,7 @@
 //
 // Your puzzle answer was 407.
 
-$input = file_get_contents('input_day2.txt');
+$input = file_get_contents('input/input_day2.txt');
 
 if ($input === false) {
     die("Kon het bestand niet lezen.");

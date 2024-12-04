@@ -1,4 +1,6 @@
 <?php
+// php -S localhost:8000
+
 // The computer appears to be trying to run a program, but its memory (your puzzle input) is corrupted. All of the instructions have been jumbled up!
 //
 // It seems like the goal of the program is just to multiply some numbers. It does that with instructions like mul(X,Y), where X and Y are each 1-3 digit numbers. For instance, mul(44,46) multiplies 44 by 46 to get a result of 2024. Similarly, mul(123,4) would multiply 123 by 4.
@@ -14,7 +16,7 @@
 //
 // Your puzzle answer was 169021493.
 
-$input = file_get_contents('input_day3.txt');
+$input = file_get_contents('input/input_day3.txt');
 
 if ($input === false) {
     die("Kon het bestand niet lezen.");

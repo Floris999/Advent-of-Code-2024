@@ -1,4 +1,6 @@
 <?php
+// php -S localhost:8000
+
 // As you scan through the corrupted memory, you notice that some of the conditional statements are also still intact. 
 // If you handle some of the uncorrupted conditional statements in the program, you might be able to get an even more accurate result.
 //
@@ -20,7 +22,7 @@
 
 // Your puzzle answer was 111762583.
 
-$input = file_get_contents('input_day3.txt');
+$input = file_get_contents('input/input_day3.txt');
 
 if ($input === false) {
     die("Kon het bestand niet lezen.");
@@ -49,4 +51,3 @@ foreach ($matches[0] as $match) {
 echo "Totaal van alle vermenigvuldigingen: " . $total . "\n";
 
 echo "<script>console.log('Totaal van alle vermenigvuldigingen: " . $total . "');</script>";
-?>
