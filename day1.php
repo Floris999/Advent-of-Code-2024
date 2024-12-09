@@ -41,16 +41,13 @@ if ($input === false) {
     die("Kon het bestand niet lezen.");
 }
 
-// Make array of numbers
+// Make array of numbers (elements)
 $numbers = preg_split('/\s+/', trim($input));
 
 // echo '<pre>';
 // var_dump($numbers);
 // echo '</pre>';
 // die();
-
-// Convert to int for calculation
-$numbers = array_map('intval', $numbers);
 
 // echo '<pre>';
 // var_dump($numbers);
@@ -67,7 +64,17 @@ for ($i = 0; $i < count($numbers); $i += 2) {
     }
 }
 
-// Sort from small to big
+// echo '<pre>';
+// var_dump($left);
+// echo '</pre>';
+// die();
+
+// echo '<pre>';
+// var_dump($right);
+// echo '</pre>';
+// die();
+
+// Sort from small to big (ascending order)
 sort($left);
 sort($right);
 
