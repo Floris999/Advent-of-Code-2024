@@ -55,6 +55,10 @@ for ($i = 0; $i < count($numbers); $i += 2) {
     }
 }
 
+// array_count_values($right):
+
+// Telt het aantal keer dat elke waarde voorkomt in een array.
+
 $similarityScore = 0;
 foreach ($left as $leftNumber) {
     $countInRight = array_count_values($right)[$leftNumber] ?? 0;
