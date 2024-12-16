@@ -59,10 +59,17 @@ for ($i = 0; $i < count($numbers); $i += 2) {
 
 // Telt het aantal keer dat elke waarde voorkomt in een array.
 
-// Example output (array_count_values): [
-//     948383 => 2,
-//     4929 => 4
+// [
+//     2 => 3,
+//     3 => 1,
+//     4 => 1
 // ]
+
+// ($leftNumber = 2):
+
+// $countInRight = array_count_values($right)[2] ?? 0 
+// geeft 3 (omdat 2 drie keer in $right voorkomt).
+// similarityScore += 2 * 3 → similarityScore = 6.
 
 $similarityScore = 0;
 foreach ($left as $leftNumber) {
